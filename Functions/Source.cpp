@@ -40,13 +40,12 @@ double Div(int a, int b)
 }
 int Factorial(int a)
 {
-	int c = 1;
-	int d = a + 1;
-	do
+	int fact = 1;
+	for (int i = 1; i <= a; i++)
 	{
-		c *= (--d);
-	} while (d > 1);
-	return c;
+		fact *= i;
+	}
+	return fact;
 }
 int Stepen(int a, int b)
 {
