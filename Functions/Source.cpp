@@ -44,9 +44,9 @@ int Factorial(int a)
 	int d = a + 1;
 	do
 	{
-		a *= (--d);
+		c *= (--d);
 	} while (d > 1);
-	return a;
+	return c;
 }
 int Stepen(int a, int b)
 {
