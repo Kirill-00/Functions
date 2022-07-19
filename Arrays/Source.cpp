@@ -145,12 +145,9 @@ int minValueIn(int arr[], const int n)
 	int arr_min = arr[0];
 	for (int i = 0; i < n; i++)
 	{
-		for (int j = 0; j < n; j++)
+		if (arr[i] < arr_min)
 		{
-			if (arr[i] < arr_min)
-			{
-				arr_min = arr[i];
-			}
+			arr_min = arr[i];
 		}
 	}
 	return arr_min;
@@ -160,12 +157,9 @@ double minValueIn(double arr[], const int n)
 	double arr_min = arr[0];
 	for (int i = 0; i < n; i++)
 	{
-		for (int j = 0; j < n; j++)
+		if (arr[i] < arr_min)
 		{
-			if (arr[i] < arr_min)
-			{
-				arr_min = arr[i];
-			}
+			arr_min = arr[i];
 		}
 	}
 	return arr_min;
@@ -175,12 +169,9 @@ int maxValueIn(int arr[], const int n)
 	int arr_max = arr[0];
 	for (int i = 0; i < n; i++)
 	{
-		for (int j = 0; j < n; j++)
+		if (arr[i] > arr_max)
 		{
-			if (arr[i] > arr_max)
-			{
-				arr_max = arr[i];
-			}
+			arr_max = arr[i];
 		}
 	}
 	return arr_max;
@@ -190,12 +181,9 @@ double maxValueIn(double arr[], const int n)
 	double arr_max = arr[0];
 	for (int i = 0; i < n; i++)
 	{
-		for (int j = 0; j < n; j++)
+		if (arr[i] > arr_max)
 		{
-			if (arr[i] > arr_max)
-			{
-				arr_max = arr[i];
-			}
+			arr_max = arr[i];
 		}
 	}
 	return arr_max;
