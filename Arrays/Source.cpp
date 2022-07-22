@@ -2,6 +2,8 @@
 using namespace std;
 
 #define tab "\t"
+#define del "_______________________________________________"
+
 
 const int ROWS = 3;
 const int COLS = 4;
@@ -54,7 +56,7 @@ void main()
 	cout << "Максимальное число: " << maxValueIn(arr, n) << endl;
 	cout << "Массив со сдвигом на 1 в лево: " << endl; shiftLeft(arr, n); Print(arr, n);
 	cout << "Массив со сдвигом на 2 в право: " << endl; shiftRight(arr, n); Print(arr, n);
-	cout << "_____________________________________________" << endl;
+	cout << del << endl;
 
 	const int SIZE = 8;
 	double brr[SIZE];
@@ -68,7 +70,7 @@ void main()
 	cout << "Максимальное число: " << maxValueIn(brr, SIZE) << endl;
 	cout << "Массив со сдвигом на 1 в лево: " << endl; shiftLeft(brr, SIZE); Print(brr, SIZE);
 	cout << "Массив со сдвигом на 2 в право: " << endl; shiftRight(brr, SIZE); Print(brr, SIZE);
-	cout << "_____________________________________________" << endl;
+	cout << del << endl;
 
 	char chrr[n];
 	FillRand(chrr, n);
@@ -79,7 +81,7 @@ void main()
 	cout << "Максимальное число: " << maxValueIn(chrr, n) << endl;
 	cout << "Массив со сдвигом на 1 в лево: " << endl; shiftLeft(chrr, n); Print(chrr, n);
 	cout << "Массив со сдвигом на 2 в право: " << endl; shiftRight(chrr, n); Print(chrr, n);
-	cout << "_____________________________________________" << endl;
+	cout << del << endl;
 
 	int i_arr_2[ROWS][COLS];
 	FillRand(i_arr_2, ROWS, COLS);
@@ -90,7 +92,7 @@ void main()
 	cout << "Максимальное значение в массиве: " << maxValueIn(i_arr_2, ROWS, COLS) << endl;
 	cout << "Массив со сдвигом на 2 в лево: " << endl; shiftLeft(i_arr_2, ROWS, COLS); Print(i_arr_2, ROWS, COLS);
 	cout << "Массив со сдвигом на 3 в право: " << endl; shiftRight(i_arr_2, ROWS, COLS); Print(i_arr_2, ROWS, COLS);
-	cout << "_____________________________________________" << endl;
+	cout << del << endl;
 
 	double d_arr_2[ROWS][COLS];
 	FillRand(d_arr_2, ROWS, COLS);
@@ -101,8 +103,7 @@ void main()
 	cout << "Максимальное значение в массиве: " << maxValueIn(d_arr_2, ROWS, COLS) << endl;
 	cout << "Массив со сдвигом на 2 в лево: " << endl; shiftLeft(d_arr_2, ROWS, COLS); Print(d_arr_2, ROWS, COLS);
 	cout << "Массив со сдвигом на 3 в право: " << endl; shiftRight(d_arr_2, ROWS, COLS); Print(d_arr_2, ROWS, COLS);
-	cout << "_____________________________________________" << endl;
-
+	cout << del << endl;
 
 	char ch_arr_2[ROWS][COLS];
 	FillRand(ch_arr_2, ROWS, COLS);
@@ -113,7 +114,7 @@ void main()
 	cout << "Максимальное значение в массиве: " << maxValueIn(ch_arr_2, ROWS, COLS) << endl;
 	cout << "Массив со сдвигом на 2 в лево: " << endl; shiftLeft(ch_arr_2, ROWS, COLS); Print(ch_arr_2, ROWS, COLS);
 	cout << "Массив со сдвигом на 3 в право: " << endl; shiftRight(ch_arr_2, ROWS, COLS); Print(ch_arr_2, ROWS, COLS);
-	cout << "_____________________________________________" << endl;
+	cout << del << endl;
 
 }
 
